@@ -92,7 +92,7 @@ detach("package:data.table", unload = TRUE)
 detach("package:h2o", unload = TRUE)
 library(h2o)
 # Initiallizing H2O with 2 threads and 10 gigs of memory
-h2o.init(nthreads = 2, max_mem_size = "8g")
+h2o.init(nthreads = 2, max_mem_size = "10g")
 
 # Loading data frame to H2o frame
 df_train <- as.h2o(as.data.frame(df_train))
